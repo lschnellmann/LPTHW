@@ -1,0 +1,14 @@
+
+
+# Hourly pay calculator 
+
+hours = float(raw_input("how many hours worked? "))
+wage = float(raw_input("what is the hourly wage? "))
+tax = float(raw_input("what is the withholding tax percent? "))
+wtax = (tax * 0.01)
+totalwage = (hours * wage) - (hours * wage * wtax)
+# total wage minus 30 percent of hours * wage 
+
+
+print "Total pay is"
+print (totalwage), "dollars"
